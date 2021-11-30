@@ -9,7 +9,6 @@ public class Rectangle {
     this.a = a;
     this.b = b;
   }
-
   public double aria() {
     return this.a * this.b;
   }
