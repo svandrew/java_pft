@@ -4,6 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.stqa.pft.addressbook.model.AddNewData;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
 public class ContactHelper extends HelperBase {
 
   public ContactHelper(FirefoxDriver wd) {
@@ -34,10 +37,15 @@ public class ContactHelper extends HelperBase {
   public void updateContactModication() {
     click(By.name("update"));
   }
+
+  public void selectContact() {
+    click(By.name("selected[]"));
+  }
+
+  public void deleteContact() {
+    click(By.cssSelector(".left:nth-child(8) > input"));
+    assertThat(wd.switchTo().alert().getText(), is("Delete 1 addresses?"));
+    wd.switchTo().alert().accept();
+  }
 }
 
-//  public void fillGroupForm(GroupData groupData) {
- //   type(By.name("group_name"), groupData.getName());
-//    type(By.name("group_header"), groupData.getHeader());
- //   type(By.name("group_footer"), groupData.getFooter());
-//  }
