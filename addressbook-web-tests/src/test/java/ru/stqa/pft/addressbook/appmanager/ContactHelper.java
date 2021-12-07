@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.stqa.pft.addressbook.model.AddNewData;
 
-public class AddNewHelper extends HelperBase {
+public class ContactHelper extends HelperBase {
 
-  public AddNewHelper(FirefoxDriver wd) {
+  public ContactHelper(FirefoxDriver wd) {
     super(wd);
   }
 
@@ -14,7 +14,7 @@ public class AddNewHelper extends HelperBase {
     click(By.linkText("home page"));
   }
 
-  public void fillAddNewForm(AddNewData addNewData) {
+  public void fillContactForm(AddNewData addNewData) {
     type(By.name("firstname"), addNewData.getFirstname());
     type(By.name("middlename"), addNewData.getMiddlename());
     type(By.name("lastname"), addNewData.getLastname());
@@ -26,4 +26,18 @@ public class AddNewHelper extends HelperBase {
   public void submitAddNewCreation() {
     click(By.name("submit"));
   }
+
+  public void initContactModification() {
+    click(By.cssSelector("tr:nth-child(4) > .center:nth-child(8) img"));
+  }
+
+  public void updateContactModication() {
+    click(By.name("update"));
+  }
 }
+
+//  public void fillGroupForm(GroupData groupData) {
+ //   type(By.name("group_name"), groupData.getName());
+//    type(By.name("group_header"), groupData.getHeader());
+ //   type(By.name("group_footer"), groupData.getFooter());
+//  }

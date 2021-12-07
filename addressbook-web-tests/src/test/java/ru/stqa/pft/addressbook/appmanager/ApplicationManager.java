@@ -9,7 +9,7 @@ public class ApplicationManager {
   private SessionHelper sessionHelper;
   private NavigationHelper navigationHelper;
   private GroupHelper groupHelper;
-  private AddNewHelper addNewHelper;
+  private ContactHelper addNewHelper;
 
 
   public void init() {
@@ -18,7 +18,7 @@ public class ApplicationManager {
     wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     wd.get("http://localhost/addressbook/group.php");
     groupHelper = new GroupHelper(wd);
-    addNewHelper = new AddNewHelper(wd);
+    addNewHelper = new ContactHelper(wd);
     navigationHelper = new NavigationHelper(wd);
     sessionHelper = new SessionHelper(wd);
     sessionHelper.login("admin", "secret");
@@ -36,7 +36,7 @@ public class ApplicationManager {
   public NavigationHelper getNavigationHelper() {
     return navigationHelper;
   }
-  public AddNewHelper getAddNewHelper() {
+  public ContactHelper getContactHelper() {
     return addNewHelper;
   }
 }
