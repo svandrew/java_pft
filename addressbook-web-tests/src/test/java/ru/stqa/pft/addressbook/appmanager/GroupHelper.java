@@ -43,4 +43,5 @@ public class GroupHelper extends HelperBase {
   public void submitGroupModication() {
     click(By.name("update"));
   }
+
 }
