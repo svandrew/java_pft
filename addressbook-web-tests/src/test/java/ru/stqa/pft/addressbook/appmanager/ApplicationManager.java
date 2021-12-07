@@ -10,7 +10,6 @@ public class ApplicationManager {
   private  NavigationHelper navigationHelper;
   private GroupHelper groupHelper;
 
-  }
 
   public void init() {
     System.setProperty("webdriver.gecko.driver", "c:/temp/geckodriver.exe");
