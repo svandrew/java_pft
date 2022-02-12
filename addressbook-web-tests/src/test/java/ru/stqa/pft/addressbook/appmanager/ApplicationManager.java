@@ -28,7 +28,7 @@ public class ApplicationManager {
       wd = new FirefoxDriver();
     } else if (browser == BrowserType.CHROME){
       wd = new ChromeDriver();
-    } else if (browser ==BrowserType.IE)  {
+    } else if (browser == BrowserType.IE)  {
       wd = new InternetExplorerDriver();
     }
     wd = new FirefoxDriver();
