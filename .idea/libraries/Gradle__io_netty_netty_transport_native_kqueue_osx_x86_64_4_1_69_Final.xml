@@ -2,9 +2,11 @@
   <library name="Gradle: io.netty:netty-transport-native-kqueue:osx-x86_64:4.1.69.Final">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-kqueue/4.1.69.Final/a9597b971925b4b0d93d32d697bfe194421d5c76/netty-transport-native-kqueue-4.1.69.Final-osx-x86_64.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-kqueue/4.1.69.Final/a9597b971925b4b0d93d32d697bfe194421d5c76/netty-transport-native-kqueue-4.1.69.Final-osx-x86_64.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-kqueue/4.1.69.Final/27d30ce44acb43d7dd9f24a4cdac77ae8417d406/netty-transport-native-kqueue-4.1.69.Final-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-kqueue/4.1.69.Final/27d30ce44acb43d7dd9f24a4cdac77ae8417d406/netty-transport-native-kqueue-4.1.69.Final-sources.jar!/" />
     </SOURCES>
   </library>

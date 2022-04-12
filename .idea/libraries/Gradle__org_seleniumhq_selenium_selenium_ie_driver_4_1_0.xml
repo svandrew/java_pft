@@ -2,9 +2,11 @@
   <library name="Gradle: org.seleniumhq.selenium:selenium-ie-driver:4.1.0">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-ie-driver/4.1.0/55063dececec019ca93f38fdb3a64414986ab2e7/selenium-ie-driver-4.1.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-ie-driver/4.1.0/55063dececec019ca93f38fdb3a64414986ab2e7/selenium-ie-driver-4.1.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-ie-driver/4.1.0/7864e09111494d02487b0a3b789f7438bd8dc7fd/selenium-ie-driver-4.1.0-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-ie-driver/4.1.0/7864e09111494d02487b0a3b789f7438bd8dc7fd/selenium-ie-driver-4.1.0-sources.jar!/" />
     </SOURCES>
   </library>
