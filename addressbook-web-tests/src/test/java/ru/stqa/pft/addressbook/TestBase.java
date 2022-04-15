@@ -3,16 +3,18 @@ package ru.stqa.pft.addressbook;
 import org.junit.After;
 import org.testng.annotations.BeforeMethod;
 
-public class TestBase extends ApplicationManager {
+public class TestBase {
+
+  protected final ApplicationManager app = new ApplicationManager();
 
   @BeforeMethod
   public void setUp() throws Exception {
-    init();
+    app.init();
   }
 
   @After
   public void tearDown() {
-    stop();
+    app.stop();
   }
 
 }

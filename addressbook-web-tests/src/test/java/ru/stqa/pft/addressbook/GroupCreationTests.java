@@ -6,11 +6,11 @@ public class GroupCreationTests extends TestBase { //класс TestBase сод�
 
   @Test
   public void testGroupCreation() {
-    gotoGroupPage();
-    initGroupCreation();
-    fillGroupForm(new GroupData("test3", "test4", "test6"));
-    submitGroupCreation();
-    returnToGroupPage();
+    app.gotoGroupPage();
+    app.initGroupCreation();
+    app.fillGroupForm(new GroupData("test3", "test4", "test6"));
+    app.submitGroupCreation();
+    app.returnToGroupPage();
   }
 
 }
