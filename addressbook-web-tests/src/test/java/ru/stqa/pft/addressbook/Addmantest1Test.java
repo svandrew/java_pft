@@ -3,6 +3,7 @@ package ru.stqa.pft.addressbook;
 
 import org.junit.After;
 import org.junit.Before;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -11,10 +12,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Addmantest1Test {
   FirefoxDriver driver;
-
-  @Before
+  @BeforeMethod
   public void setUp() {
-    System.setProperty("webdriver.gecko.driver", "c:/temp/geckodriver.exe");
+    System.setProperty("webdriver.gecko.driver","c:/temp/geckodriver.exe");
     driver = new FirefoxDriver();
   }
 
