@@ -18,15 +18,15 @@ public class GroupCreationTests {
     wd = new FirefoxDriver();
     wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
-    login();
+    login("admin", "secret");
   }
 
-  private void login() {
+  private void login(String username, String password) {
     wd.get("http://localhost/addressbook/group.php");
     wd.findElement(By.xpath("//input[@name='user']")).click();
-    wd.findElement(By.xpath("//input[@name='user']")).sendKeys("admin");
+    wd.findElement(By.xpath("//input[@name='user']")).sendKeys(username);
     wd.findElement(By.name("pass")).click();
-    wd.findElement(By.name("pass")).sendKeys("secret");
+    wd.findElement(By.name("pass")).sendKeys(password);
     wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
   }
 
